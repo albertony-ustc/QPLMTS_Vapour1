@@ -42,17 +42,17 @@
 6. **QPLMTS算法一步调度模块：** QPLMTS(a1=MakeSpan的β权重因子,a2=ServiceCost的β权重因子,IterCount=Q表迭代次数)
   - 直接产生一次QPLMTS调度结果
 
-7 .**HEFT算法一步调度模块：** HEFT()
+7. **HEFT算法一步调度模块：** HEFT()
   - 直接产生一次HEFT（经典算法）调度结果
 
 #### 实验分析区
 8. **学习率实验模块：** ParaOpt_LearningRate(IterCount=Q表迭代次数)
   - 执行学习率参数设计实验，产生学习率图表
 
-10. **β权重因子实验模块：** ParaOpt_Weight(IterCount=Q表迭代次数,Accuracy=β权重因子变化步长)
+9. **β权重因子实验模块：** ParaOpt_Weight(IterCount=Q表迭代次数,Accuracy=β权重因子变化步长)
   - 执行β权重因子参数设计实验，产生β权重因子图表
  
-11. **Q表迭代次数实验模块：** ParaOpt_Q(Scale=任务集规模列表,Curve=是否绘制稳定性曲线,IterCount=Q表迭代次数)
+10. **Q表迭代次数实验模块：** ParaOpt_Q(Scale=任务集规模列表,Curve=是否绘制稳定性曲线,IterCount=Q表迭代次数)
   - 执行Q表迭代次数实验，产生Q表迭代次数图表
  
 #### 功能模块
